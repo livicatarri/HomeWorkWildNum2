@@ -1,5 +1,5 @@
-function NumMap<Number>(n){/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
-let numNull =  new Map<Number, null>();
+function NumMap(n: number)/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
+let numNull =  new Map();
 for(let i = 0; i < n ; i++){
         numNull.set(i,  null)
 }
@@ -9,7 +9,7 @@ for(let i = 0; i < n ; i++){
 const numIf= NumMap(100);
 //console.log(numIf);
 const temp=numIf.keys()
-function mapConsole<Array>(keyConsole: temp){/**/
+function mapConsole(keyConsole: number[]){/**/
 for (item of keyConsole){
 if ((item%3==0)&&(item%5!=0)){
 console.log("Devided by tree")}
@@ -28,13 +28,11 @@ const Data:string[][] = [["36", "не приватизирован", "4 собс
 ["56", "не приватизирован", "1 собственник", "Луговая"],
 ["56", "приватизирован", "5 собственников", "Ленина"],
 ["25", "не приватизирован", "2 собственника", "Ленина"]]
-function SearchData(data: string[][]){
+function SearchData(data: string[][]): boolean{
 for (item of data) {
-    let square = Number(item[0])
-    let street = item[3]
-    console.log(((square <= 40 && street=== "Ленина") || (square=== 56)) ? true :  false)
+    let{square, location} = Data{item[0], item[3]}
+    console.log(((Number(location) <= 40 && square == "Ленина") || (Number(location)== 56)) ? true :  false)
 }
 }
 
 SearchData(Data)
-    
