@@ -22,6 +22,30 @@ else {
 }
 }
 
-} 
+}
+
+        
 let temp1=mapConsole(temp)
 console.log(temp1)
+
+/*let arr= [["36", "не приватизирован", "4 собственника", "Парковая"],
+["45", "приватизирован", "3 собственника", "Луговая"],
+["56", "не приватизирован", "1 собственник", "Луговая"],
+["56", "приватизирован", "5 собственников", "Ленина"],
+["25", "не приватизирован", "2 собственника", "Ленина"]]*/
+
+interface Realtor{
+    square: number
+    privateHome: string;
+    countOwner: string;
+    location: string;
+}
+const Arr : Realtor[] = [
+    {square:"36", privateHome:"не приватизирован", countOwner:"4 собственника", location:"Парковая"},
+    {square:"45", privateHome:"приватизирован", countOwner:"3 собственника", location:"Луговая"},
+    {square:"56", privateHome:"не приватизирован", countOwner:"1 собственник", location:"Луговая"},
+    {square:"56", privateHome:"приватизирован", countOwner:"5 собственников", location:"Ленина"},
+    {square:"25", privateHome:"не приватизирован", countOwner:"2 собственника", location:"Ленина"},
+    ]
+    console.log(Arr)
+    
