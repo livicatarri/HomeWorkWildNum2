@@ -1,4 +1,4 @@
-function NumMap(n: number)/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
+function NumMap(n: number): number[][]{/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
 let numNull =  new Map();
 for(let i = 0; i < n ; i++){
         numNull.set(i,  null)
@@ -30,8 +30,9 @@ const Data:string[][] = [["36", "не приватизирован", "4 собс
 ["25", "не приватизирован", "2 собственника", "Ленина"]]
 function SearchData(data: string[][]): boolean{
 for (item of data) {
-    let{square, location} = Data{item[0], item[3]}
-    console.log(((Number(location) <= 40 && square == "Ленина") || (Number(location)== 56)) ? true :  false)
+    let [square, , ,location] = item
+    //console.log(square)
+    console.log(((Number(square) <= 40 && location == "Ленина") || (Number(square)== 56)) ? true :  false)
 }
 }
 
