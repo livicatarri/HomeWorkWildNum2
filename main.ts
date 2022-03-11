@@ -1,4 +1,4 @@
-function NumMap(n: number): number[][]{/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
+function NumMap(n: number){/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
 let numNull =  new Map();
 for(let i = 0; i < n ; i++){
         numNull.set(i,  null)
