@@ -29,7 +29,7 @@ function SearchDataApartament(dataSearch: string[][]): void{
 for ( const item of dataSearch) {
     let [square, , ,location] = item
       //return ((Number(square) <= 40 && location == "Ленина") || (Number(square)== 56)) ? true :  false
-    console.log (((Number(square) <= 40 && location === "Ленина") || (Number(square)== 56)) ? true :  false)
+    console.log (((Number(square) <= 40 && location === "Ленина") || (Number(square)== 56)))
    
 }
 
