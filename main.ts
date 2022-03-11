@@ -1,5 +1,5 @@
-function NumMapFill(n: Number):Map<Number, null>  {/*создать new Map<number, null>() проитерироваться циклом от 0 до 100 и задать как ключ мапы, индекс, а как значение null.*/
-let numNull =  new Map();
+function NumMapFill(n){  
+    let numNull =  new Map();
 for(let i = 0; i <  n ; i++){
         numNull.set(i,  null)
 }
@@ -8,7 +8,7 @@ for(let i = 0; i <  n ; i++){
 
 console.log(NumMapFill(100));
 
-function mapConsoleMessage(keyConsole: number[]): void{/**/
+function mapConsoleMessage(keyConsole){/**/
 for (const item of keyConsole){
 if ((item%3==0)&&(item%5!=0)){
 console.log("Devided by tree")}
@@ -22,7 +22,7 @@ else {
 //mapConsole(temp)
 mapConsoleMessage(NumMapFill(100).keys())
 
-const DataArr:string[][] = [["36", "не приватизирован", "4 собственника", "Парковая"],
+let DataArr: string[][] = [["36", "не приватизирован", "4 собственника", "Парковая"],
 ["45", "приватизирован", "3 собственника", "Луговая"],
 ["56", "не приватизирован", "1 собственник", "Луговая"],
 ["56", "приватизирован", "5 собственников", "Ленина"],
@@ -32,7 +32,7 @@ for ( const item of dataSearch) {
     let [square, , ,location] = item
       //return ((Number(square) <= 40 && location == "Ленина") || (Number(square)== 56)) ? true :  false
     console.log (((Number(square) <= 40 && location === "Ленина") || (Number(square)== 56)) ? true :  false)
-   // return rezult
+   
 }
 
 }
